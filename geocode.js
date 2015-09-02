@@ -4,9 +4,9 @@
 // locate you.
 
 function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
+    map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: -33.4727879, lng: -70.6298313},
-    zoom: 15
+    zoom: 14
   });
   var infoWindow = new google.maps.InfoWindow({map: map});
 
