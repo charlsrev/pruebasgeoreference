@@ -5,8 +5,8 @@
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 6
+    center: {lat: -33.4727879, lng: -70.6298313},
+    zoom: 15
   });
   var infoWindow = new google.maps.InfoWindow({map: map});
 
@@ -33,6 +33,6 @@ function initMap() {
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);
   infoWindow.setContent(browserHasGeolocation ?
-                        'Error: The Geolocation service failed.' :
-                        'Error: Your browser doesn\'t support geolocation.');
+                        'Error: El servicio de Geolocalización ha fallado' :
+                        'Error: Tu navegador no tiene soporte para geolocalización');
 }
